@@ -1,3 +1,5 @@
+export const PROPERTIES_URL = 'http://localhost:3000/api/properties';
+
 export const propertyTypes = [
     'Flat',
     'Apartment',
