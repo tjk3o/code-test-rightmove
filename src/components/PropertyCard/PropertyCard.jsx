@@ -13,6 +13,11 @@ const ImageAndPrice = ({ price, mainImage }) => {
     );
 };
 
+ImageAndPrice.propTypes = {
+    price: PropTypes.number,
+    mainImage: PropTypes.string,
+};
+
 const PropertyDetails = ({ propertyTitle, displayAddress, branchName, url, summary }) => {
     return (
         <div className="PropertyDetails">
@@ -31,6 +36,14 @@ const PropertyDetails = ({ propertyTitle, displayAddress, branchName, url, summa
             </div>
         </div>
     );
+};
+
+PropertyDetails.propTypes = {
+    propertyTitle: PropTypes.string,
+    displayAddress: PropTypes.string,
+    branchName: PropTypes.string,
+    url: PropTypes.string,
+    summary: PropTypes.string,
 };
 
 const PropertyCard = ({ price, mainImage, propertyTitle, displayAddress, branchName, propertyUrl, summary }) => {
