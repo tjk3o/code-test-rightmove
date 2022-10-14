@@ -4,7 +4,7 @@ import { within } from '@testing-library/dom';
 import PropertyListing from '../PropertyListing';
 
 describe('PropertyListing', () => {
-    it('should render five property cards', async () => {
+    it('should render one hundred and one property cards', async () => {
         render(<PropertyListing />);
         const propertiesList = screen.getByRole('list');
         const propertyCards = await within(propertiesList).findAllByRole('listitem');
